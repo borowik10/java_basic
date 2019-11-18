@@ -26,7 +26,7 @@ public class introduction {
 // formatowanie wyjscia
 //        \n -> new line  w printf
         System.out.printf("Kwota brutto: %.2f zł\n", sallaryNet * (1 + (vatTax/100.0)));
-        System.out.printf("%.2fzł netto to %.2fzł brutto\n", sallaryNet, sallaryNet * (1 + (vatTax/100.0)));
+        System.out.printf("%.2f zł netto to %.2fzł brutto\n", sallaryNet, sallaryNet * (1 + (vatTax/100.0)));
 
         System.out.printf("Liczba: %18.2f\n", sallaryNet);
 
