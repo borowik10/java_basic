@@ -1,5 +1,7 @@
 package oop;
 
+import java.util.Scanner;
+
 public class Main {
 //    Klasa główna - uruchomieniowa
 public static void main(String[] args) {
@@ -31,6 +33,18 @@ public static void main(String[] args) {
     System.out.println("Calculated sallary gross");
     System.out.println("================================");
     System.out.println(userThree.modifyUserParameters(15000, false));
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Wprowadź imię: ");
+    String name = scanner.nextLine();
+    System.out.println("Wprowadź nazwisko: ");
+    String lastName = scanner.nextLine();
+    System.out.println("Wprowadź płeć: ");
+    char gender = scanner.nextLine().charAt(0);
+    System.out.println("Wprowadź pensje: ");
+    double sallaryNet = scanner.nextDouble();
+    User userFour = new User(name, lastName, gender, true, sallaryNet);
+userFour.printUser();
 
 }
 
